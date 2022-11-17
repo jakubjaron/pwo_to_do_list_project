@@ -11,10 +11,17 @@ import java.util.Arrays;
  * @author dariusz
  */
 public class TodoController {
-    private List<Todo> currentTodos;
+    private static TodoController instance;
+    private List<Todo> currentTodos = new ArrayList<Todo>();
     
-    TodoController(){
-        currentTodos = new ArrayList<Todo>();
+    private TodoController(){
+    }
+    
+    public static TodoController getInstance(){
+        if(instance == null){
+            instance = new TodoController();
+        }
+        return instance;
     }
     
     public void AddTodo(Todo todo){
