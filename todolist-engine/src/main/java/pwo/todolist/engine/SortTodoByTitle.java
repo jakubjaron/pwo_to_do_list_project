@@ -24,8 +24,8 @@ public class SortTodoByTitle implements Comparator<Todo>{
     @Override
     public int compare(Todo a, Todo b) {
         if(isReversed){
-            return a.title.compareToIgnoreCase(b.title);
+            return b.title.compareToIgnoreCase(a.title);
         }
-        return b.title.compareToIgnoreCase(a.title);
+        return a.title.compareToIgnoreCase(b.title);
     }
 }

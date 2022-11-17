@@ -24,8 +24,8 @@ public class SortTodoByDate implements Comparator<Todo> {
     @Override
     public int compare(Todo o1, Todo o2) {
         if(isReversed){
-            return o1.date.compareTo(o1.date);
+            return o2.date.compareTo(o1.date);
         }
-        return o2.date.compareTo(o1.date);
+        return o1.date.compareTo(o2.date);
     }
 }

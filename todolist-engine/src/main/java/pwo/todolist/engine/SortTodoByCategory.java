@@ -24,9 +24,9 @@ public class SortTodoByCategory implements Comparator<Todo>{
     @Override
     public int compare(Todo o1, Todo o2) {
         if(isReversed){
-            return o1.category.compareToIgnoreCase(o1.category);
+            return o2.category.compareToIgnoreCase(o1.category);
         }
-        return o2.category.compareToIgnoreCase(o1.category);
+        return o1.category.compareToIgnoreCase(o2.category);
     }
     
 }
