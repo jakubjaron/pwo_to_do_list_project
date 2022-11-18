@@ -10,12 +10,7 @@ import java.util.*;
  *
  * @author dariusz
  */
-public class TodoSorter implements Comparator<Todo> {
-
-    @Override
-    public int compare(Todo o1, Todo o2) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+public class TodoSorter {
     public enum SortType{
         LEAST_TIME_REMANING,
         MOST_TIME_REMANING,

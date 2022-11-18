@@ -5,7 +5,7 @@
 package pwo.todolist.engine;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Date;
 /**
  *
  * @author dariusz
@@ -39,5 +39,18 @@ public class TodoController {
     
     public List<Todo> GetTodosInOrder(TodoSorter.SortType sortType){
         return TodoSorter.Sort(currentTodos, sortType);
+    }
+    
+    public List<Todo> filterTitleByPhrase(String phrase) {
+        return new FilterByTitle(phrase).filter();
+    }
+    public List<Todo> filterCategoryByPhrase(String phrase) {
+        return new FilterByCategory(phrase).filter();
+    }
+    public List<Todo> filterByDate(Date date){
+        return new FilterByDate(date).filter();
+    }
+    public List<Todo> filterByIsImportant(boolean isImportant){
+        return new FilterByIsImportant(isImportant).filter();
     }
 }
