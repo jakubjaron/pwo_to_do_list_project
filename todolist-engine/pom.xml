@@ -13,4 +13,5 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>pwo.todolist.engine.TodolistEngine</exec.mainClass>
     </properties>
+
 </project>
