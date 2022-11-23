@@ -38,7 +38,9 @@ public class TodoController {
     }
     
     public List<Todo> GetTodosInOrder(TodoSorter.SortType sortType){
-        return TodoSorter.Sort(currentTodos, sortType);
+        List<Todo> todosToSort = new ArrayList<>(currentTodos);
+        List<Todo> sortedTodos = TodoSorter.Sort(todosToSort, sortType);
+        return sortedTodos;
     }
     
     public List<Todo> filterTitleByPhrase(String phrase) {

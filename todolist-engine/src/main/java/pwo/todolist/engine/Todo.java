@@ -10,7 +10,7 @@ import java.util.*;
  *
  * @author dariusz
  */
-public class Todo implements Comparable<Todo>{
+public class Todo {
     String title;
     String category;
     Date date;
@@ -23,12 +23,4 @@ public class Todo implements Comparable<Todo>{
         this.date = date;
         this.isImportant = isImportant;
     }
-
-    @Override
-    public int compareTo(Todo compareTodo) {
-        String compareTitle = ((Todo) compareTodo).title;
-        return compareTitle.compareTo(title);
-    }
-    
-    
 }
