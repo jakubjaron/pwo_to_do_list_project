@@ -7,7 +7,7 @@ package pwo.todolist.engine;
 import java.util.*;
 
 /**
- *
+ * Klasa przechowująca dane na temat zadań Todo
  * @author dariusz
  */
 public class Todo {
@@ -16,7 +16,13 @@ public class Todo {
     Date date;
     boolean isImportant;
     
-    
+    /**
+     * Konstuktor klasy
+     * @param title Tytuł
+     * @param category Kategoria
+     * @param date Termin wykonania zadania
+     * @param isImportant Czy zadanie jest ważne
+     */
     public Todo(String title, String category, Date date, boolean isImportant){
         this.title = title;
         this.category = category;

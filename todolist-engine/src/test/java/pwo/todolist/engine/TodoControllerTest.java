@@ -163,5 +163,4 @@ public class TodoControllerTest {
         assertTrue(result.contains(todos.get(0)));
         assertTrue(result.size() == 1);
     }
-
 }

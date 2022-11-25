@@ -7,10 +7,14 @@ package pwo.todolist.engine;
 import java.util.*;
 
 /**
- *
+ * Klasa sortująca obiekty {@Link Todo} według wybranych pól.
  * @author dariusz
  */
 public class TodoSorter {
+    
+    /**
+     * Typ wyliczeniowy służący do określenia typu sortowania
+     */
     public enum SortType{
         LEAST_TIME_REMANING,
         MOST_TIME_REMANING,
@@ -20,6 +24,12 @@ public class TodoSorter {
         CATEGORY_REVERSE_ALPHABETICAL
     }
     
+    /**
+     * Funkcja sortująca wszystkie aktualne zadania Todo i zwracające te w odpowiedniej kolejności
+     * @param todos Zadania Todo do posortowania
+     * @param sortType Typ sortowania
+     * @return Lista zadań Todo
+     */
     public static List<Todo> Sort(List<Todo> todos, SortType sortType){
         switch(sortType){
             case LEAST_TIME_REMANING:

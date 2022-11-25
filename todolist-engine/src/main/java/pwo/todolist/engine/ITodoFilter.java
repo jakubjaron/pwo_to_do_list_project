@@ -7,7 +7,8 @@ package pwo.todolist.engine;
 import java.util.List;
 
 /**
- *
+ * Interfejs umożliwiający spójne wywołanie operacji filter(), operacji filtrowania zadań Todo
+ * na każdym obiekcie implementującym interfejs.
  * @author dariusz
  */
 public interface ITodoFilter {
