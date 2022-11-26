@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 /todolist-db/nbproject/
 /todolist-db/target/
+=======
+/todolist-engine/target/
+/todolist-engine/nbproject/
+>>>>>>> 81ccbc3b7ae4e9206786c0824833c32f5cfe4c05
