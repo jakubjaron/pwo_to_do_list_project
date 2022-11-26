@@ -13,9 +13,9 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>pwo.todolist.engine.TodolistEngine</exec.mainClass>
     </properties>
-<<<<<<< HEAD
 
-=======
+
+
     
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.toedter/jcalendar -->
@@ -55,5 +55,5 @@
             </plugins>
         </pluginManagement>
     </build>
->>>>>>> 81ccbc3b7ae4e9206786c0824833c32f5cfe4c05
+
 </project>

@@ -1,20 +1,20 @@
-<<<<<<< HEAD
+
 package pwo.todolist.engine;
 
 /**
  *
  * @author Patryk
  */
-=======
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
-package pwo.todolist.engine;
+
 
 import java.util.Date;
 
->>>>>>> 81ccbc3b7ae4e9206786c0824833c32f5cfe4c05
+
 public class TodolistEngine {
 
     public static void main(String[] args) {
