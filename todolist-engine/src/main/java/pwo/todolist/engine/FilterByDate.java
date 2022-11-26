@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Klasa zawierająca logikę filtrowania obiektów {@Link Todo} według 
+ * Klasa zawierająca logikę filtrowania obiektów Todo według 
  * danego dnia pozyskanego z jCalendar
  * @author dariusz
  */

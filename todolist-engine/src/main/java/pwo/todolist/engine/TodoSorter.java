@@ -7,7 +7,7 @@ package pwo.todolist.engine;
 import java.util.*;
 
 /**
- * Klasa sortująca obiekty {@Link Todo} według wybranych pól.
+ * Klasa sortująca obiekty Todo według wybranych pól.
  * @author dariusz
  */
 public class TodoSorter {

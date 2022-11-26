@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Date;
 /**
- * Klasa obsługująca czynności związane z zarządzaniem obiektami {@Link Todo}
+ * Klasa obsługująca czynności związane z zarządzaniem obiektami Todo
  * takie jak tworzenie, usuwanie, sortowanie i filtrowanie obiektów Todo.
  * 
  * @author dariusz

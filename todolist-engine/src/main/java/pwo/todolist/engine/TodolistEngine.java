@@ -6,10 +6,6 @@ package pwo.todolist.engine;
 
 import java.util.Date;
 
-/**
- *
- * @author Kuba
- */
 public class TodolistEngine {
 
     public static void main(String[] args) {
