@@ -7,8 +7,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>todolist-engine</module>
-        <module>todolist-gui</module>
         <module>todolist-db</module>
+        <module>todolist-gui</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
