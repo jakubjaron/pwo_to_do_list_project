@@ -6,12 +6,13 @@
         <artifactId>to_do_list</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <groupId>pwo.todolist.engine</groupId>
     <artifactId>todolist-engine</artifactId>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
-        <exec.mainClass>pwo.todolist.engine.TodolistEngine</exec.mainClass>
+        
     </properties>
 
 

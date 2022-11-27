@@ -11,10 +11,10 @@ import java.util.*;
  * @author dariusz
  */
 public class Todo {
-    String title;
-    String category;
-    Date date;
-    boolean isImportant;
+    public String title;
+    public String category;
+    public Date date;
+    public boolean isImportant;
     
     /**
      * Konstuktor klasy
