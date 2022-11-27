@@ -322,30 +322,24 @@ public class TodolistGui extends javax.swing.JFrame {
     }//GEN-LAST:event_addtask_textFocusLost
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
-        String name, category;
-        Date deadline;
-        boolean isImportant;
-        
+        List<Todo> currentTodos = new ArrayList<Todo>();
         List<Object> tasks = new ArrayList<>();
+        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+        String name;
+        
        
         for(int i = 0;i< model.getColumnCount(); i++ ){
             tasks.add(model.getValueAt(jTable2.getSelectedRow(),i));
-        }
-        
+        }        
         name = (String) tasks.get(0);
-        category = (String) tasks.get(1);
-        deadline = (Date) tasks.get(2);
-        isImportant = (boolean) tasks.get(3);
 
-        //System.out.println(name + "\n" + category + "\n" + deadline + "\n" + isImportant);
-        
         if(jTable2.getSelectedRow() != -1){
             model.removeRow(jTable2.getSelectedRow());           
         }
+ 
+        currentTodos = TodoController.getInstance().GetTodos();
         
-        Todo task_object = new Todo(name, category, deadline, isImportant);
-        TodoController.getInstance().RemoveTodo(task_object);
+        currentTodos.removeIf(t -> t.title == name);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
