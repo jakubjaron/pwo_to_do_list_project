@@ -9,7 +9,6 @@ import pwo.todolist.engine.*;
 import java.util.List;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
-import pwo.todolist.db.service.*;
 
 /**
  *
@@ -278,6 +277,9 @@ public class TodolistGui extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:  
+        if(jDateChooser.getDate() == null){
+            return;
+        }
         String task;
         String category;
         boolean isImportant = isImportantButton.isSelected();
@@ -322,6 +324,9 @@ public class TodolistGui extends javax.swing.JFrame {
     }//GEN-LAST:event_addtask_textFocusLost
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        if(jTable2.getSelectedRow() == -1)
+            return;
+        
         List<Todo> currentTodos = new ArrayList<Todo>();
         List<Object> tasks = new ArrayList<>();
         DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
